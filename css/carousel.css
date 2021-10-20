@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.carousel{
+    width: 100%;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+}
+
+.carousel__container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel-item{
+    display: inline-block;
+    background-color:brown;
+    width: 200px;
+    height: 250px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all;
+    /* Compensa los movimientos y hace que la animacion inicie como desde la izquierda */
+    transform-origin: center left;
+}
+
+/* Muevo a la derecha los que estén después del hover */
+.carousel-item:hover  ~ .carousel-item{
+    transform: translate3d(100px, 0, 0);
+}
+
+/* hover en el contenedor para opacar los items */
+.carousel__container:hover .carousel-item{
+    opacity: 0.3;
+}
+
+
+/* hover específico en el item para quwe crezca y compense la opacidad a 1 para darle importancia */
+.carousel__container:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.carousel-item__img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-item__details{
+    background: linear-gradient(to top,  rgba(0,0,0) 0%,rgba(0,0,0, 0.1) 100% );
+    font-size: 10px;
+    opacity: 0;
+    transition: 0.45s opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.carousel-item:hover .carousel-item__details{
+    opacity: 1;
+}
+
+.carousel-item__details img{
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-item__details p{
+    color: white;
+    width: 100%;
+    padding-left: 7px;
+}
+
+.carousel-item__details--title{
+    font-size: 16px;
+}
+
+.carousel-item__details--subtitle{
+    font-size: 12px;
+}
+
+@media only screen and (max-width:600px){
+    .carousel{
+        padding: 0px;
+        /* padding-top: 30px; */
+        
+
+    }
+    .carousel__container{
+        white-space: normal;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin:70px 0px;
+    }
+    .carousel-item{
+        display: inline-block;
+        background-color:brown;
+        width: 150px;
+        height: 187px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.4s all;
+        /* Compensa los movimientos y hace que la animacion inicie como desde la izquierda */
+        transform-origin: center left;
+    }
+
+}

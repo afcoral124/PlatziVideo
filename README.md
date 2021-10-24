@@ -10,4 +10,4 @@ Nota: los colores en el gif no son del todo fieles a la página
 ![Captura de pantalla (346)](https://user-images.githubusercontent.com/80283644/138580344-d314a160-6ffb-4c4b-b55a-6f86625eaa66.png)
 ![Captura de pantalla (347)](https://user-images.githubusercontent.com/80283644/138580345-8bc58211-69d1-4ff5-904d-39df62224c71.png)
 ![Captura de pantalla (348)](https://user-images.githubusercontent.com/80283644/138580347-4284e368-3b01-4f69-8ada-be401233e518.png)
-![Captura de pantalla (349)](https://user-images.githubusercontent.com/80283644/138580348-1f1bd511-2130-484f-8d21-b498585ccb33.png)
+![Captura de pantalla (350)](https://user-images.githubusercontent.com/80283644/138580739-0df0328a-2bb9-48a3-b502-1fff32272174.png)
